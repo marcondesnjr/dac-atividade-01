@@ -1,4 +1,4 @@
-FROM openjdk
+FROM openjdk:alpine
 ADD /src /usr/src/myapp/src
 WORKDIR ./usr/src/myapp
 RUN mkdir ./class && javac -d ./class ./src/*.java
